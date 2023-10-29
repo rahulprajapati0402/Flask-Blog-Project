@@ -1,0 +1,18 @@
+{
+    "params":
+    {
+        "fb_url" : "https://facebook.com/",
+        "twitter_url" : "https://twitter.com/",
+        "github_url" : "https://github.com/",
+        "title"  : "Coding Thunder",
+        "title_line" : "Blog that likes by programmers",
+        "contact_line" : "Have questions? I have answers.",
+        "about_line" : "This is what we do.",
+        "username" : "",
+        "password" : "",
+        "no_of_posts" : 5,
+        "admin_username" : "admin",
+        "admin_password" : "admin",
+        "folder_path" : "C:\\Users\\rahul\\Desktop\\New folder\\flask-tutorial\\static\\Uploaded files"
+    }
+}

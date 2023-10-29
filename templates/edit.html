@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('/static/assets/img/home-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Admin Panel</h1>
+                    <span class="subheading">Control all your posts from here</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <h1>Add/Edit Post</h1>
+        <hr>
+
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="/edit/{{sno}}">
+            <div class="form-floating">
+                <input class="form-control" value="{{post.title}}" name="title" type="text" placeholder="Post title" required>
+                <label for="title">Post Title</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control" type="text" value="{{post.slug}}" name="slug" placeholder="Slug" required>
+                <label for="slug">Slug</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control" name="content" value="{{post.content}}" type="text" placeholder="Content" required>
+                <label for="content">Content</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control" name="image" value="{{post.image}}" type="text" placeholder="Image" required>
+                <label for="image">Image</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control" name="author" value="{{post.author}}" type="text" placeholder="Author" required>
+                <label for="author">Author</label>
+            </div>
+            
+            <!-- Submit Button-->
+            <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+
+{% endblock body %}
